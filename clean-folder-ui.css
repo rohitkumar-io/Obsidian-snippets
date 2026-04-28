@@ -1,0 +1,42 @@
+/* Apple-like clean folder UI */
+
+/* Reduce tree indentation */
+.tree-item-children {
+  margin-left: 6px !important;
+}
+
+/* Folder = card style */
+.nav-folder-title {
+  background: #F2F2F7;
+  border-radius: 12px;
+  margin: 6px 10px;
+  padding: 12px 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+/* Arrow on right */
+.nav-folder-title-content::after {
+  content: "›";
+  margin-left: auto;
+  color: #8E8E93;
+  font-size: 16px;
+}
+
+/* Hover effect */
+.nav-folder-title:hover {
+  background: #E5E5EA;
+}
+
+/* Reduce nesting visual */
+.tree-item-children .nav-folder-title {
+  background: transparent;
+  padding-left: 16px;
+}
+
+/* Files slightly visible (not fully hidden) */
+.nav-file-title {
+  opacity: 0.85;
+}
