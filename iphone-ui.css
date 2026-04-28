@@ -1,0 +1,14 @@
+/* ===== Hide floating bottom-right menu button (FAB) ===== */
+button[aria-label="Open menu"],
+button[aria-label="More options"],
+button[aria-label="Menu"],
+.floating-action-button,
+.fab,
+.mobile-fab {
+  display: none !important;
+}
+
+/* ===== Backup: hide last floating button container ===== */
+body .mod-mobile button.rounded {
+  display: none !important;
+}
